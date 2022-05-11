@@ -1,0 +1,22 @@
+Int -> i,aux;
+
+Array -> a:6;
+
+Main ->
+	write("Escreva os 6 elementos do array:");
+	
+	W?(i<6)->
+		a[i]:read();
+		i:i+1;
+	;
+
+	write("Array Invertido:");
+
+	i:i-1;
+
+	W?(i>=0)->
+		aux:a[i];
+		write(aux);
+		i:i-1;
+	;
+;

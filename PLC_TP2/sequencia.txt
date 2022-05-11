@@ -1,0 +1,31 @@
+Int -> n,conta:0,i;
+
+Main ->
+
+	n:read("Qual é o tamanho da sua sequência?");
+	
+	?(n<=0)->
+		write("Valor inválido!");
+	;->>
+
+		W?(n>0)->
+
+			i:read("Escreva um número natural:");
+
+			?(i<0)->
+				write("Tem de ser um número natural!");
+			
+			;->>
+
+				?(i % 2 = 1)->
+					conta : conta + 1;
+					write("Encontrado um número ímpar:",i);
+				;
+				n:n-1;	
+			;
+			
+		;
+
+		write("Foi encontrado um total de números ímpares igual a:",conta);
+	;
+;

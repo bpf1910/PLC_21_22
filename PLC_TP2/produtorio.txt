@@ -1,0 +1,17 @@
+Int -> n,p:1,i;
+
+Main ->
+	n:read("Quantos números quer multiplicar?");
+
+	?(n<=0)->
+		write("Valor inválido!");
+	;->>
+		W?(n>0)->
+			write("Escreva um número:");
+			i:read();
+			p:p*i;
+			n:n-1;
+		;
+		write("Produtório:",p);
+	;
+;

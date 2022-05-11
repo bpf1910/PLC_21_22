@@ -1,0 +1,20 @@
+Int -> n,i,m:50000000;
+
+Main ->
+	
+	n:read("Escolha um número inteiro positivo:");
+
+	?(n<=0)->
+		write("Valor inválido!");
+	;->>
+		W?(n>0)->
+			write("Escreva um número:");
+			i:read();
+			?(i<m)->
+				m:i;
+			;
+			n:n-1;
+		;
+		write("Menor número:",m);
+	;
+;
